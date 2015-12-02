@@ -1,3 +1,3 @@
 # jenkins-slave-auth
-Jenkins slave setup with secret key
+Jenkins slave setup with secret key..
 
