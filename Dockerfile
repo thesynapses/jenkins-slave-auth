@@ -18,6 +18,10 @@ RUN apt-get -y install phpmd
 RUN apt-get -y install phpcpd
 RUN apt-get -y install phpdox
 RUN apt-get -y install curl php5-cli git
+RUN apt-get -y install php5-xdebug
+RUN pear install --alldeps phpDocumentor
+RUN apt-get -y install php5-mysql
+RUN apt-get -y install phpab
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
