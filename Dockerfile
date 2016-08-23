@@ -1,3 +1,4 @@
+#php unit test docker image
 FROM java:8
 
 # Make sure the package repository is up to date.
@@ -20,7 +21,7 @@ RUN apt-get -y install phpdox
 RUN apt-get -y install curl php5-cli git
 RUN apt-get -y install php5-xdebug
 RUN pear install --alldeps phpDocumentor
-RUN apt-get -y install php5-mysql
+RUN apt-get -y install php5-mysqlnd
 RUN apt-get -y install phpab
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
