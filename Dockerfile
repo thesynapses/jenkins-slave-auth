@@ -1,4 +1,5 @@
 #php unit test docker image
+#thesynapses
 FROM java:8
 
 # Make sure the package repository is up to date.
